@@ -28,14 +28,33 @@ const Navbar = () => {
                         <li>
                             <Link className='link'>Hem</Link>
                         </li>
-                        <li>
+                        <li className='dropdown'>
                             <Link className='link'>Menyer</Link>
+                            <div className='dropdown-content'>
+                                <li><Link to="/" className='dropdown-link '>Lunch</Link></li>
+                                <li><Link to="/" className='dropdown-link '>Middag</Link></li>
+                                <li><Link to="/" className='dropdown-link '>Brunch</Link></li>
+                                <li><Link to="/" className='dropdown-link '>Pongkasse</Link></li>
+                                <li><Link to="/" className='dropdown-link '>Dryck</Link></li>
+                            </div>
                         </li>
-                        <li>
+
+                        <li className='dropdown'>
                             <Link className='link'>Beställ Online</Link>
+                            <div className='dropdown-content'>
+                                <li><Link to="/" className='dropdown-link '>Take Away</Link></li>
+                                <li><Link to="/" className='dropdown-link '>Hemlevernas</Link></li>
+                                <li><Link to="/" className='dropdown-link '>Vår app</Link></li>
+                            </div>
                         </li>
-                        <li>
+                        <li className='dropdown'>
                             <Link className='link'>BOKA</Link>
+                            <div className='dropdown-content'>
+                                <li><Link to="/" className='dropdown-link '>Boka bord</Link></li>
+                                <li><Link to="/" className='dropdown-link '>Catering</Link></li>
+                                <li><Link to="/" className='dropdown-link '>Eget rum</Link></li>
+                                <li><Link to="/" className='dropdown-link '>Konferens</Link></li>
+                            </div>
                         </li>
                         <button className='btn-container' onClick={hideNavbar}><FaTimes className='nav-btn nav-close-btn'/></button>
                     </nav>
