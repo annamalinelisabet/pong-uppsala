@@ -20,28 +20,31 @@ const Navbar = () => {
             <img src={PongLogo} className='logo' alt="pong-logo" />
         </div>
 
-        <div className='nav-links-container'>
+        <div className='nav-wrapper'>
+            <div className='emty-div'></div>
+                <div className='nav-links-container'>
 
-            <nav ref={navRef} className='nav-links'>
-                <li>
-                    <Link className='link'>Hem</Link>
-                </li>
-                <li>
-                    <Link className='link'>Menyer</Link>
-                </li>
-                <li>
-                    <Link className='link'>Beställ Online</Link>
-                </li>
-                <li>
-                    <Link className='link'>BOKA</Link>
-                </li>
-                <button className='btn-container' onClick={hideNavbar}><FaTimes className='nav-btn nav-close-btn'/></button>
-            </nav>
+                    <nav ref={navRef} className='nav-links'>
+                        <li>
+                            <Link className='link'>Hem</Link>
+                        </li>
+                        <li>
+                            <Link className='link'>Menyer</Link>
+                        </li>
+                        <li>
+                            <Link className='link'>Beställ Online</Link>
+                        </li>
+                        <li>
+                            <Link className='link'>BOKA</Link>
+                        </li>
+                        <button className='btn-container' onClick={hideNavbar}><FaTimes className='nav-btn nav-close-btn'/></button>
+                    </nav>
 
-            <button className='btn-container' onClick={showNavbar}>
-                <FaBars className='nav-btn nav-open-btn'/>
-            </button>
+                    <button className='btn-container' onClick={showNavbar}>
+                        <FaBars className='nav-btn nav-open-btn'/>
+                    </button>
 
+                </div>
         </div>
 
     </div>
