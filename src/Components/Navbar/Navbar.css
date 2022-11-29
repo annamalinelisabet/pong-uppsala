@@ -1,12 +1,14 @@
 .Navbar{
     display: flex;
-    overflow: hidden;
 }
+
+/* ---- */
 
 .Navbar .logo-container {
     background-color: #000;
-    width: 20rem;
-    height: 20%;
+    width: 10rem;
+    height: 10%;
+    position: absolute;
 }
 .Navbar .logo {
     background-repeat: no-repeat;
@@ -117,6 +119,9 @@
     padding-block: .5rem;
     text-align: center;
 }
+.Navbar .showDropdown li .dropdown-link {
+    color: #000;
+}
 
 .Navbar .linkActive {
     color: #000;
@@ -149,11 +154,10 @@
     .Navbar .logo-container {
         background-color: #000;
         width: 20rem;
-        height: 100vh; /* -- KOM IHÅG ATT ÄNDRA FRÅN VH --*/
     }
 
     .emty-div {
-        width: 10%;
+        width: 35%;
     }
     .Navbar .nav-links {
         align-items: center;
