@@ -23,9 +23,11 @@ const Navbar = () => {
   return (
     <div>
         <div className='Navbar'>
-            <div className='logo-container'>
-                <img src={PongLogo} className='logo' alt="pong-logo" />
-            </div>
+            <Link to="/">
+                <div className='logo-container'>
+                    <img src={PongLogo} className='logo' alt="pong-logo" />
+                </div>
+            </Link>
 
             <div className='nav-wrapper'>
                 <div className='emty-div'></div>

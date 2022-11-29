@@ -9,6 +9,7 @@
     width: 10rem;
     height: 10%;
     position: absolute;
+    cursor: pointer;
 }
 .Navbar .logo {
     background-repeat: no-repeat;
