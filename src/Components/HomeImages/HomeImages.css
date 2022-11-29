@@ -1,0 +1,27 @@
+.HomeImages .line-div {
+    margin-block: .2rem;
+}
+
+.HomeImages .line {
+    background: var(--primary-clr);
+    width: 100%;
+    height: 1px;
+}
+
+.HomeImages .white-line {
+    background: white;
+    width: 100%;
+    height: 2px;
+}
+
+.HomeImages .img-div {
+    height: 800px;
+    width: 100%;
+}
+
+.HomeImages img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
