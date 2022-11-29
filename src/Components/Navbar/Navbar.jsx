@@ -1,9 +1,8 @@
 import './Navbar.css'
-import React from 'react'
-import { useRef } from 'react'
+import React  from 'react'
+import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from "react-icons/fa"
- 
 import PongLogo from '../../Images/PongLogo.png'
 
 const Navbar = () => {
@@ -14,6 +13,11 @@ const Navbar = () => {
     const hideNavbar = () => {
         navRef.current.classList.remove("responsive_nav")
     }
+    
+    const [showDropdown, setShowDropdown] = useState(false)
+    const [showOnlineDropdown, setShowOnlineDropdown] = useState(false)
+    const [showBookDropdown, setShowBookDropdown] = useState(false)
+    
   return (
     <div className='Navbar'>
         <div className='logo-container'>
@@ -26,11 +30,11 @@ const Navbar = () => {
 
                     <nav ref={navRef} className='nav-links'>
                         <li>
-                            <Link className='link'>Hem</Link>
+                            <Link className='link home'>Hem</Link>
                         </li>
                         <li className='dropdown'>
-                            <Link className='link'>Menyer</Link>
-                            <div className='dropdown-content'>
+                            <Link className={`link ${showDropdown ? `linkActive` : ``}`} onClick={() => setShowDropdown(state => !state)}>Menyer</Link>
+                            <div className={`${showDropdown ? `showDropdown` : `dropdown-content`}`}>
                                 <li><Link to="/" className='dropdown-link '>Lunch</Link></li>
                                 <li><Link to="/" className='dropdown-link '>Middag</Link></li>
                                 <li><Link to="/" className='dropdown-link '>Brunch</Link></li>
@@ -40,16 +44,16 @@ const Navbar = () => {
                         </li>
 
                         <li className='dropdown'>
-                            <Link className='link'>Beställ Online</Link>
-                            <div className='dropdown-content'>
+                            <Link className={`link ${showOnlineDropdown ? `linkActive` : ``}`} onClick={() => setShowOnlineDropdown(state => !state)}>Beställ Online</Link>
+                            <div className={showOnlineDropdown ? `showDropdown` : `dropdown-content`}>
                                 <li><Link to="/" className='dropdown-link '>Take Away</Link></li>
                                 <li><Link to="/" className='dropdown-link '>Hemlevernas</Link></li>
                                 <li><Link to="/" className='dropdown-link '>Vår app</Link></li>
                             </div>
                         </li>
                         <li className='dropdown'>
-                            <Link className='link'>BOKA</Link>
-                            <div className='dropdown-content'>
+                            <Link className={`link ${showBookDropdown ? `linkActive` : ``}`} onClick={() => setShowBookDropdown(state => !state)}>BOKA</Link>
+                            <div className={showBookDropdown ? `showDropdown` : `dropdown-content`}>
                                 <li><Link to="/" className='dropdown-link '>Boka bord</Link></li>
                                 <li><Link to="/" className='dropdown-link '>Catering</Link></li>
                                 <li><Link to="/" className='dropdown-link '>Eget rum</Link></li>
