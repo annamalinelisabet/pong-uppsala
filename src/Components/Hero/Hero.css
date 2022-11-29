@@ -2,15 +2,19 @@
     width: 70%;
 }
 
+.Hero .relative {
+    position: relative;
+}
+
 .Hero .hero-wrapper {
     justify-content: space-between;
     display: none;
-    height: 90vh;
+    height: 150vh;
 }
 
 .Hero .img-wrapper {
-    width: 120vh;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
 }
 
 .Hero .hero-img {
@@ -31,7 +35,9 @@
     width: 20rem;
     height: 100%;
     display: none;
+    /* position: relative; */
 }
+
 
 /* --CIRCLE CARD-- */
 
@@ -52,7 +58,9 @@
 }
 
 /* -- TEXT WRAPPER -- */
-
+.Hero .text-wrapper {
+    display: block;
+}
 .Hero .info-wrapper {
     margin: 0 auto;
     justify-content: center;
@@ -71,10 +79,14 @@
 }
 /* -- btn -- */
 
+.Hero .btn-wrapper {
+    display: inline-block;
+}
+
 .Hero button {
     width: 100%;
     color: #fff;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-weight: bold;
 }
 .Hero .btn-book-table{
@@ -90,8 +102,44 @@
 .Hero .btn-order-online:active{
     background: rgba(255, 255, 255, 0.351);
 }
+/* -- BTN END -- */
+
+.Hero .lg-title {
+    color: var(--primary-clr);
+    text-transform: uppercase;
+    font-family: var(--header-font);
+    font-weight: bold;
+    font-size: 50px;
+}
+.Hero .lg-text-wrapper {
+    display: none;
+}
+.Hero .lg-wrapper {
+}
 
 @media screen and (min-width: 992px) {
+    
+    .Hero .lg-wrapper {
+        position: absolute;
+        top: 10;
+        
+        display: flex;
+    }
+
+    .Hero .line {
+        border: 4px solid var(--primary-clr);
+        width: 10%;
+    }
+    .Hero .lg-text-wrapper {
+        display: flex;
+    }
+    .Hero .text-wrapper {
+        display: none;
+    }
+
+    .Hero .btn-wrapper {
+        display: none;
+    }
     
     .Hero .black {
         display: block;
@@ -125,14 +173,14 @@
 
     .Hero .flip-card-takeaway {
         background: transparent;
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         perspective: 1000px;
         border-radius: 50%;
         cursor: pointer;
         position: absolute;
         top: 15rem;
-        left: 9rem;
+        left: 11rem;
     }
 
     .Hero .flip-card-inner {
@@ -181,21 +229,21 @@
     
     .Hero .flip-card-delivery {
         background: #fff;
-        width: 280px;
-        height: 280px;
+        width: 260px;
+        height: 260px;
         perspective: 1000px;
         border-radius: 50%;
         cursor: pointer;
         position: absolute;
         top: 30rem;
-        right: 53rem;
+        right: 38rem;
         border: 5px solid #fff;
     }
 
     .Hero .flip-card-front-delivery {
         background: #000;
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
     }
 
@@ -210,6 +258,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
     }
     
     .Hero .flip-card-front-delivery, .flip-card-back-delivery {
@@ -225,18 +274,18 @@
     }
 
     .Hero .txt-wrapper {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     /* -- FLIP END -- */
 
     .Hero .homedelivery-img{
         display: flex;
-        margin-top: 3.5rem;
+        margin-top: 2.5rem;
     }
     .Hero .takeaway-img {
         display: flex;
-        margin-top: 4rem;
+        margin-top: 2.6rem;
     }
 
     .Hero .bg-img {

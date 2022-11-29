@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Hero.css'
-// import hero from '../../Images/hero.png'
+import hero from '../../Images/hero.png'
 // import header from '../../Images/header.png'
 // import sushirolls from '../../Images/sushirolls.png'
-import sushiOnPlate from '../../Images/suhiOnPlate.png'
+// import sushiOnPlate from '../../Images/suhiOnPlate.png'
 import shipping from '../../Images/shipping.png'
 import takeaway from '../../Images/take-away.png'
 
@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div className='Hero'>
 
-      <div className='hero-wrapper'>
+    <div className='hero-wrapper'>
 
       <div className='black'></div>
         <div className='circle-wrapper'>
@@ -49,8 +49,8 @@ const Hero = () => {
         </div>
         
         <div className='img-wrapper'>
-            {/* <img src={hero} className="hero-img" alt="sushi on plate" /> */}
-            <img src={sushiOnPlate} className="hero-img" alt="sushi on plate" />
+            <img src={hero} className="hero-img" alt="sushi on plate" />
+            {/* <img src={sushiOnPlate} className="hero-img" alt="sushi on plate" /> */}
             {/* <img src={header} className="hero-img" alt="sushi on plate" /> */}
         </div>
 
@@ -58,12 +58,19 @@ const Hero = () => {
 
       <div className='bg-img info-wrapper'>
         <div className='container-small'>
-          <div className='line'></div>
             <div className='text-wrapper'>
               <p><span className='title'>Välkommen</span> till oss på Storgatan 27, intill centralstationen i Uppsala. </p>
               <br />
               <p>Vardagar dukar vi upp vår populära asiatiska lunchbuffé och på kvällarna lyxar vi till den lite extra. Vi erbjuder också à la carte serverad vid bordet.</p>
           </div>
+          <div className='relative'></div>
+              <div className='line'></div>
+          <div className='lg-wrapper'>
+                <div className='lg-text-wrapper'>
+                  <h1 className='lg-title'>Välkommen</h1>
+                  <p>till oss på Storgatan 27, intill centralstationen i Uppsala. >Vardagar dukar vi upp vår populära asiatiska lunchbuffé och på kvällarna lyxar vi till den lite extra. Vi erbjuder också à la carte serverad vid bordet.</p>
+                </div>
+            </div>
           <div className='btn-wrapper'>
             <button className='btn btn-book-table'>Boka bord</button>
             <button className='btn btn-order-online'>Beställ online</button>
