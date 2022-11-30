@@ -21,7 +21,7 @@
 }
 
 .Hero .img-wrapper {
-    width: 100vh;
+    width: 50%;
     height: 100vh;
     position: relative;
 }
@@ -127,14 +127,13 @@
 }
 
 .Hero .lg-text {
-    margin-left: 2rem;
-    width: 900px;
+    margin-left: 4rem; 
     margin-top: .5rem;
     font-size: 20px;
     
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1162px) {
 
 
     .Hero .btn-wrapper {
@@ -300,7 +299,7 @@
         border-top: 6px solid var(--primary-clr);
         margin-bottom: 2rem;
         position: absolute;
-        top: 8rem;
+        top: 5rem;
         left: 13rem;
     }
     
@@ -318,12 +317,28 @@
         display: flex;
         position: absolute;
         left: 13rem;
-        top: 9rem;
+        top: 6rem;
+    }
+
+    .Hero .lg-text {
+        width: 500px;
     }
 
 
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 
+    .Hero .lg-text {
+        width: 700px;
+    }
 }
+
+@media screen and (min-width: 1500px) {
+
+    .Hero .lg-text {
+        width: 900px;
+    }
+}
+
+

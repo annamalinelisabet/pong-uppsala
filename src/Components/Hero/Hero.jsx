@@ -59,7 +59,9 @@ const Hero = () => {
                 <div className='line'></div>
                 <div className='lg-text-wrapper'>
                   <h1 className='lg-title'>Välkommen</h1>
-                  <p className='lg-text'>till oss på Storgatan 27, intill centralstationen i Uppsala.<span className='dblock'>Vardagar dukar vi upp vår populära asiatiska lunchbuffé och på kvällarna lyxar vi till den lite extra. Vi erbjuder också à la carte serverad vid bordet.</span></p>
+                  <div className='with'>
+                    <p className='lg-text'>till oss på Storgatan 27, intill centralstationen i Uppsala.<span className='dblock'>Vardagar dukar vi upp vår populära asiatiska lunchbuffé och på kvällarna lyxar vi till den lite extra. Vi erbjuder också à la carte serverad vid bordet.</span></p>
+                  </div>
                 </div>
 
                 <div className='btn-wrapper'>
@@ -68,18 +70,6 @@ const Hero = () => {
                 </div>
             </div>
           </div>
-
-
-
-        {/* <div className='d-flex'>
-            <div className='lg-wrapper'>
-                <div className='lg-text-wrapper'>
-                  <h1 className='lg-title'>Välkommen</h1>
-                  <p>till oss på Storgatan 27, intill centralstationen i Uppsala. >Vardagar dukar vi upp vår populära asiatiska lunchbuffé och på kvällarna lyxar vi till den lite extra. Vi erbjuder också à la carte serverad vid bordet.</p>
-                </div>
-            </div>
-        </div> */}
-
     </div>
   )
 }
