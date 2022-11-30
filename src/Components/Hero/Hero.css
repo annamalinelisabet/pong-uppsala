@@ -224,7 +224,6 @@
         flex-direction: column;
     }
 
-
     /* -- SMAL CIRCLE -- */
     
     .Hero .flip-card-delivery {
@@ -335,10 +334,29 @@
 }
 
 @media screen and (min-width: 1500px) {
-
+    
     .Hero .lg-text {
         width: 900px;
     }
+    /* -- BIG CRICLE -- */
+    .Hero .flip-card-takeaway {
+        width: 400px;
+        height: 400px;
+    }
+
+    .Hero .takeaway-img {
+        margin-top: 6rem;
+    }
+
+    /* -- FLIP CARD SMALL -- */
+    .Hero .flip-card-delivery{
+        width: 300px;
+        height: 300px;
+    }
+    .Hero .homedelivery-img{
+        margin-top: 4rem;
+    }
+
 }
 
 
