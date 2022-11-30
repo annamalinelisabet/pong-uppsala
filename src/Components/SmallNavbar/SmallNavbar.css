@@ -1,32 +1,12 @@
-.Navbar{
-    display: flex;
-}
-
-/* ---- */
-
-.Navbar .logo-container {
-    background-color: #000;
-    width: 10rem;
-    height: 10%;
-    position: absolute;
-    cursor: pointer;
-    z-index: 1001;
-    position: fixed;
-}
-.Navbar .logo {
-    background-repeat: no-repeat;
-    width: 100%;
-}
-
 /* -- Nav Links -- */
 
-/* .Navbar .nav-wrapper {
+.SmallNavbar .nav-wrapper {
     width: 100%;
     position: fixed;
     z-index: 1000;
 }
 
-.Navbar .nav-links-container {
+.SmallNavbar .nav-links-container {
     background-color: var(--primary-clr);
     display: flex;
     align-items: center;
@@ -35,7 +15,7 @@
     padding: 0 2rem;
 }
 
-.Navbar .nav-links {
+.SmallNavbar .nav-links {
     position: fixed;
     top: 0;
     left: 0;
@@ -51,15 +31,15 @@
     transform: translateX(150vh);
 }
 
-.Navbar .responsive_nav {
+.SmallNavbar .responsive_nav {
     transform: none;
 }
 
-.Navbar .nav-links li {
+.SmallNavbar .nav-links li {
     list-style: none;
 }
 
-.Navbar .link { 
+.SmallNavbar .link { 
     font-family: var(--header-font) ;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -71,25 +51,25 @@
     cursor: pointer;
 }
 
-.Navbar .home:active {
+.SmallNavbar .home:active {
     color: #000;
 }
 
 /* -- Dropdown -- */
 
-/* .Navbar .dropdown {
+.SmallNavbar .dropdown {
     width: 100%;
 }
 
-.Navbar .nav-links li {
+.SmallNavbar .nav-links li {
     display: block;
     position: relative;
 }
-.Navbar .dropdown-content li {
+.SmallNavbar .dropdown-content li {
     display: block;
 }
 
-.Navbar .dropdown-content {
+.SmallNavbar .dropdown-content {
     width: 180px;
     background: var(--primary-clr);
     background: #000;
@@ -101,18 +81,18 @@
 }
 
 
-.Navbar .dropdown-link:hover {
+.SmallNavbar .dropdown-link:hover {
     color: var(--primary-clr);
     background-color: rgb(0, 0, 0);
 }
 
-.Navbar .dropdown-link {
+.SmallNavbar .dropdown-link {
    display: block;
    color: #fff;
    padding: .5rem;
 }
 
-.Navbar .showDropdown {
+.SmallNavbar .showDropdown {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,22 +104,22 @@
     padding-block: .5rem;
     text-align: center;
 }
-.Navbar .showDropdown li .dropdown-link {
+.SmallNavbar .showDropdown li .dropdown-link {
     color: #000;
 }
 
-.Navbar .linkActive {
+.SmallNavbar .linkActive {
     color: #000;
 }
 
 /* -- Hamburger menu -- */
-/* .Navbar .btn-container {
+.SmallNavbar .btn-container {
     border: none;
     background: none;
     cursor: pointer;
     outline: none;
 }
-.Navbar .nav-btn {
+.SmallNavbar .nav-btn {
     color: #fff;
     width: 1.7rem;
     height: 1.7rem;
@@ -147,25 +127,25 @@
     opacity: 1;
 }
 
-.Navbar .nav-close-btn {
+.SmallNavbar .nav-close-btn {
     position: absolute;
     top: 1.7rem;
     right: 2rem;
-}   */
+}
 
 
 @media screen and (min-width: 992px) {
     
-    .Navbar .logo-container {
+    .SmallNavbar .logo-container {
         background-color: #000;
         width: 20rem;
         height: 10rem;
     }
 
-    /* .emty-div {
+    .SmallNavbar .emty-div {
         width: 35%;
     }
-    .Navbar .nav-links {
+    .SmallNavbar .nav-links {
         align-items: center;
         flex-direction: row;
         position: inherit;
@@ -175,38 +155,38 @@
         width: 80%;
         margin: auto;
     }
-    .Navbar .link {
+    .SmallNavbar .link {
         display: block;
         justify-content: inherit;
         align-items: inherit;
         padding-right: 2rem;
     }
-    .Navbar .dropdown {
+    .SmallNavbar .dropdown {
         width: auto;
     }
 
-    .Navbar .nav-wrapper {
+    .SmallNavbar .nav-wrapper {
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
     
-    .Navbar .nav-links-container {
+    .SmallNavbar .nav-links-container {
         justify-content: space-between;
         width: 100%;
         box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.204);
     }
 
-    .Navbar .nav-btn {
+    .SmallNavbar .nav-btn {
         visibility: hidden;
         opacity: 0;
     }
 
-    .Navbar .dropdown:hover > .dropdown-content {
+    .SmallNavbar .dropdown:hover > .dropdown-content {
         display: block;
     } 
 
-    .Navbar .showDropdown {
+    .SmallNavbar .showDropdown {
         display: none;
-    } */
+    }
 }

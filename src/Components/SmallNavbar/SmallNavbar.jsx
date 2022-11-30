@@ -1,37 +1,26 @@
-import './Navbar.css'
-import React  from 'react'
-import { useRef } from 'react'
+import React from 'react'
+import './SmallNavbar.css'
+import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import PongLogo from '../../Images/PongLogo.png'
-// import hero from '../../Images/hero.png'
+import { FaBars, FaTimes } from "react-icons/fa"
 
 
-const Navbar = () => {
+const SmallNavbar = () => {
     const navRef = useRef();
-    const hideLogo = () => {
+    const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav")
     }
-    // const navRef = useRef();
-    // const showNavbar = () => {
-    //     navRef.current.classList.toggle("responsive_nav")
-    // }
-    // const hideNavbar = () => {
-    //     navRef.current.classList.remove("responsive_nav")
-    // }
+    const hideNavbar = () => {
+        navRef.current.classList.remove("responsive_nav")
+    }
     
-    // const [showDropdown, setShowDropdown] = useState(false)
-    // const [showOnlineDropdown, setShowOnlineDropdown] = useState(false)
-    // const [showBookDropdown, setShowBookDropdown] = useState(false)
-    
-  return (
-        <div className='Navbar'>
-            <Link to="/">
-                <div className='logo-container' >
-                    <img src={PongLogo} className='logo' alt="pong-logo" />
-                </div>
-            </Link>
+    const [showDropdown, setShowDropdown] = useState(false)
+    const [showOnlineDropdown, setShowOnlineDropdown] = useState(false)
+    const [showBookDropdown, setShowBookDropdown] = useState(false)
 
-            {/* <div className='nav-wrapper'>
+  return (
+    <div className='SmallNavbar'>
+        <div className='nav-wrapper'>
                 <div className='emty-div'></div>
                         <div className='nav-links-container'>
 
@@ -75,10 +64,9 @@ const Navbar = () => {
                             </button>
 
                         </div>
-                 </div> */}
-
-            </div>
+                 </div>
+    </div>
   )
 }
 
-export default Navbar
+export default SmallNavbar

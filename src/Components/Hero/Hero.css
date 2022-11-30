@@ -2,24 +2,31 @@
     width: 70%;
 }
 
-.Hero .relative {
-    position: relative;
+.Hero .mt-2 {
+    margin-top: 2rem;
+    display: block;
+}
+
+.Hero .dlex {
+    display: flex;
 }
 
 .Hero .hero-wrapper {
     justify-content: space-between;
     display: none;
-    height: 150vh;
+    height: 1200px;
 }
 
 .Hero .img-wrapper {
     width: 100vh;
-    height: 100vh;
+    height: 800px;
+    position: relative;
 }
 
 .Hero .hero-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     visibility: hidden;
 }
 
@@ -35,14 +42,14 @@
     width: 20rem;
     height: 100%;
     display: none;
-    /* position: relative; */
+    position: relative;
 }
 
 
 /* --CIRCLE CARD-- */
 
 .Hero .cricle-wrapper {
-    position: relative;
+    /* position: relative; */
     width: 100%;
 }
 
@@ -61,11 +68,13 @@
 .Hero .text-wrapper {
     display: block;
 }
+
 .Hero .info-wrapper {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
 .Hero .title {
@@ -77,11 +86,8 @@
 .Hero .text-wrapper p {
     color: #fff;
 }
-/* -- btn -- */
 
-.Hero .btn-wrapper {
-    display: inline-block;
-}
+/* -- btn -- */
 
 .Hero button {
     width: 100%;
@@ -89,6 +95,7 @@
     margin-top: 1.5rem;
     font-weight: bold;
 }
+
 .Hero .btn-book-table{
     background: var(--primary-clr);
 }
@@ -103,7 +110,7 @@
     background: rgba(255, 255, 255, 0.351);
 }
 /* -- BTN END -- */
-
+/* 
 .Hero .lg-title {
     color: var(--primary-clr);
     text-transform: uppercase;
@@ -115,14 +122,13 @@
     display: none;
 }
 .Hero .lg-wrapper {
-}
+} */
 
 @media screen and (min-width: 992px) {
     
-    .Hero .lg-wrapper {
+    /* .Hero .lg-wrapper {
         position: absolute;
-        top: 10;
-        
+        top: 1;
         display: flex;
     }
 
@@ -132,9 +138,10 @@
     }
     .Hero .lg-text-wrapper {
         display: flex;
-    }
+    } */
+
     .Hero .text-wrapper {
-        display: none;
+        /* display: none; */
     }
 
     .Hero .btn-wrapper {
@@ -180,7 +187,8 @@
         cursor: pointer;
         position: absolute;
         top: 15rem;
-        left: 11rem;
+        left: 10rem;
+        position: absolute;
     }
 
     .Hero .flip-card-inner {
@@ -235,9 +243,10 @@
         border-radius: 50%;
         cursor: pointer;
         position: absolute;
-        top: 30rem;
-        right: 38rem;
+        bottom: 5rem;
+        left: -8rem;
         border: 5px solid #fff;
+        position: absolute;
     }
 
     .Hero .flip-card-front-delivery {
