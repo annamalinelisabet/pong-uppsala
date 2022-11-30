@@ -6,20 +6,23 @@
     margin-top: 2rem;
     display: block;
 }
+.Hero .dblock {
+    display: block;
+}
 
-.Hero .dlex {
+.Hero .dflex {
     display: flex;
 }
 
 .Hero .hero-wrapper {
     justify-content: space-between;
     display: none;
-    height: 1200px;
+    height: 100vh;
 }
 
 .Hero .img-wrapper {
     width: 100vh;
-    height: 800px;
+    height: 100vh;
     position: relative;
 }
 
@@ -34,25 +37,19 @@
     background: url('../../Images/hero.png') rgba(0, 0, 0, 0.636);
     background-size: cover;
     background-blend-mode: multiply;
-    height: calc(100vh - 65px);
+    height: 100vh;
 }
 
 .Hero .black {
     background: #000;
     width: 20rem;
-    height: 100%;
+    height: 100vh;
     display: none;
     position: relative;
 }
 
 
 /* --CIRCLE CARD-- */
-
-.Hero .cricle-wrapper {
-    /* position: relative; */
-    width: 100%;
-}
-
 .Hero .takeaway-img {
     display: none;
     width: 200px;
@@ -75,6 +72,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: min(90%, 600px);
 }
 
 .Hero .title {
@@ -89,6 +88,9 @@
 
 /* -- btn -- */
 
+.Hero .btn-wrapper {
+    width: 100%;
+}
 .Hero button {
     width: 100%;
     color: #fff;
@@ -109,40 +111,31 @@
 .Hero .btn-order-online:active{
     background: rgba(255, 255, 255, 0.351);
 }
-/* -- BTN END -- */
-/* 
+
+.Hero .lg-text-wrapper {
+    display: none;
+}
 .Hero .lg-title {
     color: var(--primary-clr);
     text-transform: uppercase;
     font-family: var(--header-font);
-    font-weight: bold;
-    font-size: 50px;
+    font-weight: 700;
+    font-size: 60px;
 }
-.Hero .lg-text-wrapper {
-    display: none;
+.Hero .line {
+    display: block;
 }
-.Hero .lg-wrapper {
-} */
+
+.Hero .lg-text {
+    margin-left: 2rem;
+    width: 900px;
+    margin-top: .5rem;
+    font-size: 20px;
+    
+}
 
 @media screen and (min-width: 992px) {
-    
-    /* .Hero .lg-wrapper {
-        position: absolute;
-        top: 1;
-        display: flex;
-    }
 
-    .Hero .line {
-        border: 4px solid var(--primary-clr);
-        width: 10%;
-    }
-    .Hero .lg-text-wrapper {
-        display: flex;
-    } */
-
-    .Hero .text-wrapper {
-        /* display: none; */
-    }
 
     .Hero .btn-wrapper {
         display: none;
@@ -297,8 +290,35 @@
         margin-top: 2.6rem;
     }
 
+    /* -- INFORMATION -- */
+    .Hero .title {
+        font-size: 50px;
+    }
+
+    .Hero .line {
+        width: 6rem;
+        border-top: 6px solid var(--primary-clr);
+        margin-bottom: 2rem;
+        position: absolute;
+        top: 8rem;
+        left: 13rem;
+    }
+    
     .Hero .bg-img {
-        background: none;
+        background-color: #000;
+        position: relative;
+        width: 20rem;
+    }
+
+    .Hero .text-wrapper {
+        display: none;
+    }
+
+    .Hero .lg-text-wrapper {
+        display: flex;
+        position: absolute;
+        left: 13rem;
+        top: 9rem;
     }
 
 
@@ -306,8 +326,4 @@
 
 @media screen and (min-width: 1280px) {
 
-    /* .Hero .flip-card-delivery{
-        top: 27rem;
-        right: 46rem;
-    } */
 }

@@ -12,7 +12,6 @@ const Hero = () => {
     <div className='hero-wrapper'>
 
       <div className='black'>
-            <div className='circle-wrapper'>
               <Link to="/">
                 <div className='flip-card-takeaway'>
                   <div className='flip-card-inner'>
@@ -27,7 +26,6 @@ const Hero = () => {
                   </div>
                 </div>
               </Link>
-          </div>
       </div>
 
           <div className='img-wrapper'>
@@ -52,20 +50,26 @@ const Hero = () => {
 
       </div>
 
-      <div className='bg-img info-wrapper'>
-        <div className='container'>
-            <div className='text-wrapper'>
-              <div className='line'></div>
-              <p><span className='title'>Välkommen</span> till oss på Storgatan 27, intill centralstationen i Uppsala.<span className='mt-2'>Vardagar dukar vi upp vår populära asiatiska lunchbuffé och på kvällarna lyxar vi till den lite extra. Vi erbjuder också à la carte serverad vid bordet.</span></p>
-              {/* <br />
-              <p>Vardagar dukar vi upp vår populära asiatiska lunchbuffé och på kvällarna lyxar vi till den lite extra. Vi erbjuder också à la carte serverad vid bordet.</p> */}
+          <div className='bg-img'>
+            <div className='info-wrapper container'>
+                  <div className='text-wrapper'>
+                    <p><span className='title'>Välkommen</span> till oss på Storgatan 27, intill centralstationen i Uppsala.<span className='mt-2'>Vardagar dukar vi upp vår populära asiatiska lunchbuffé och på kvällarna lyxar vi till den lite extra. Vi erbjuder också à la carte serverad vid bordet.</span></p>
+                </div>
+
+                <div className='line'></div>
+                <div className='lg-text-wrapper'>
+                  <h1 className='lg-title'>Välkommen</h1>
+                  <p className='lg-text'>till oss på Storgatan 27, intill centralstationen i Uppsala.<span className='dblock'>Vardagar dukar vi upp vår populära asiatiska lunchbuffé och på kvällarna lyxar vi till den lite extra. Vi erbjuder också à la carte serverad vid bordet.</span></p>
+                </div>
+
+                <div className='btn-wrapper'>
+                  <button className='btn btn-book-table'>Boka bord</button>
+                  <button className='btn btn-order-online'>Beställ online</button>
+                </div>
+            </div>
           </div>
 
-          <div className='btn-wrapper'>
-            <button className='btn btn-book-table'>Boka bord</button>
-            <button className='btn btn-order-online'>Beställ online</button>
-          </div>
-        </div>
+
 
         {/* <div className='d-flex'>
             <div className='lg-wrapper'>
@@ -75,7 +79,6 @@ const Hero = () => {
                 </div>
             </div>
         </div> */}
-      </div>
 
     </div>
   )
