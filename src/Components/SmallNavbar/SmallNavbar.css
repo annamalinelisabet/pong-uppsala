@@ -3,6 +3,7 @@
 .SmallNavbar .nav-wrapper {
     width: 100%;
     position: fixed;
+    z-index: 100;
 }
 
 .SmallNavbar .nav-links-container {

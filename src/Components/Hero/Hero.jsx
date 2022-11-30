@@ -70,6 +70,7 @@ const Hero = () => {
                 </div>
             </div>
           </div>
+          <div className='black-second'></div>
     </div>
   )
 }

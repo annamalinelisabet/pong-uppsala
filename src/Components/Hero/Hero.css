@@ -91,6 +91,7 @@
 .Hero .btn-wrapper {
     width: 100%;
 }
+
 .Hero button {
     width: 100%;
     color: #fff;
@@ -101,9 +102,11 @@
 .Hero .btn-book-table{
     background: var(--primary-clr);
 }
+
 .Hero .btn-order-online {
     border: 3px solid #fff;
 }
+
 .Hero .btn-book-table:active{
     background: #bd6f02;
 }
@@ -115,6 +118,7 @@
 .Hero .lg-text-wrapper {
     display: none;
 }
+
 .Hero .lg-title {
     color: var(--primary-clr);
     text-transform: uppercase;
@@ -122,6 +126,7 @@
     font-weight: 700;
     font-size: 60px;
 }
+
 .Hero .line {
     display: block;
 }
@@ -306,6 +311,8 @@
         background-color: #000;
         position: relative;
         width: 20rem;
+        height: 20rem;
+
     }
 
     .Hero .text-wrapper {
@@ -323,7 +330,12 @@
         width: 500px;
     }
 
-
+    .Hero .black-second {
+        width: 20rem;
+        height: 5rem;
+        background: #000;
+        clip-path: ellipse(85% 53% at 15.2% 2%);;
+    }
 }
 
 @media screen and (min-width: 1200px) {

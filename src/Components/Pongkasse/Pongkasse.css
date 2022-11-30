@@ -9,7 +9,7 @@
 
 .Pongkasse .vegan {
     position: absolute;
-    bottom: 4rem;
+    bottom: 1rem;
     right: 6rem;
     background: #28A074;
     padding: .5em;
@@ -58,6 +58,11 @@
         display: flex;
         /* justify-content: center; */
         /* align-items: center; */
+    }
+
+    .Pongkasse .vegan {
+        bottom: 4rem;
+        padding: 1em;
     }
     
     .Pongkasse .pong-wrapper {
