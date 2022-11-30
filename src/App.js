@@ -1,10 +1,11 @@
 import './App.css';
+import SmallNavbar from './Components/SmallNavbar/SmallNavbar';
 import Views from './Views/Views';
 
 function App() {
   return (
     <div className="App">
-      <button className='btn'>btn</button>
+      <SmallNavbar />
       <Views />
     </div>
   );

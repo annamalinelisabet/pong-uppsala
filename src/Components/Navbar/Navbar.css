@@ -1,0 +1,29 @@
+.Navbar{
+    display: flex;
+}
+
+/* ---- */
+
+.Navbar .logo-container {
+    background-color: #000;
+    width: 10rem;
+    height: 10%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1001;
+    position: fixed;
+}
+.Navbar .logo {
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    
+    .Navbar .logo-container {
+        background-color: #000;
+        width: 20rem;
+        height: 10rem;
+        position: absolute;
+    }
+}
