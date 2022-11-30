@@ -3,8 +3,6 @@ import React  from 'react'
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import PongLogo from '../../Images/PongLogo.png'
-// import hero from '../../Images/hero.png'
-
 
 const Navbar = () => {
     const navRef = useRef();

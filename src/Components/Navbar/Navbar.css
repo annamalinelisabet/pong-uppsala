@@ -8,9 +8,8 @@
     background-color: #000;
     width: 10rem;
     height: 10%;
-    position: absolute;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 900;
     position: fixed;
 }
 .Navbar .logo {
@@ -21,9 +20,9 @@
 @media screen and (min-width: 992px) {
     
     .Navbar .logo-container {
-        background-color: #000;
         width: 20rem;
         height: 10rem;
         position: absolute;
+        z-index: 1000;
     }
 }

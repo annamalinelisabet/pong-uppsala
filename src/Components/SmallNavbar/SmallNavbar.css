@@ -3,7 +3,6 @@
 .SmallNavbar .nav-wrapper {
     width: 100%;
     position: fixed;
-    z-index: 1000;
 }
 
 .SmallNavbar .nav-links-container {
@@ -81,9 +80,8 @@
 }
 
 
-.SmallNavbar .dropdown-link:hover {
+.SmallNavbar .dropdown-content .dropdown-link:hover {
     color: var(--primary-clr);
-    background-color: rgb(0, 0, 0);
 }
 
 .SmallNavbar .dropdown-link {
@@ -103,6 +101,7 @@
     background: var(--primary-clr);
     padding-block: .5rem;
     text-align: center;
+    z-index: 1001;
 }
 .SmallNavbar .showDropdown li .dropdown-link {
     color: #000;
@@ -133,9 +132,17 @@
     right: 2rem;
 }
 
+@media screen and (min-width: 992px) {
+    .SmallNavbar .nav-wrapper {
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+    }
+
+}
 
 @media screen and (min-width: 1043px) {
-    
+
     .SmallNavbar .logo-container {
         background-color: #000;
         width: 20rem;
