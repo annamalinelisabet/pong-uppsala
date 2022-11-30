@@ -1,0 +1,362 @@
+.container-small {
+    width: 70%;
+}
+
+.Hero .mt-2 {
+    margin-top: 2rem;
+    display: block;
+}
+.Hero .dblock {
+    display: block;
+}
+
+.Hero .dflex {
+    display: flex;
+}
+
+.Hero .hero-wrapper {
+    justify-content: space-between;
+    display: none;
+    height: 100vh;
+}
+
+.Hero .img-wrapper {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+.Hero .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    visibility: hidden;
+}
+
+.Hero .bg-img {
+    background: url('../../Images/hero.png') rgba(0, 0, 0, 0.636);
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+.Hero .black {
+    background: #000;
+    width: 20rem;
+    height: 100vh;
+    display: none;
+    position: relative;
+}
+
+
+/* --CIRCLE CARD-- */
+.Hero .takeaway-img {
+    display: none;
+    width: 200px;
+    margin: 0 auto;
+}
+.Hero .homedelivery-img{
+    display: none;
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* -- TEXT WRAPPER -- */
+.Hero .text-wrapper {
+    display: block;
+}
+
+.Hero .info-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: min(90%, 600px);
+}
+
+.Hero .title {
+    color: var(--primary-clr);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.Hero .text-wrapper p {
+    color: #fff;
+}
+
+/* -- btn -- */
+
+.Hero .btn-wrapper {
+    width: 100%;
+}
+.Hero button {
+    width: 100%;
+    color: #fff;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+.Hero .btn-book-table{
+    background: var(--primary-clr);
+}
+.Hero .btn-order-online {
+    border: 3px solid #fff;
+}
+.Hero .btn-book-table:active{
+    background: #bd6f02;
+}
+
+.Hero .btn-order-online:active{
+    background: rgba(255, 255, 255, 0.351);
+}
+
+.Hero .lg-text-wrapper {
+    display: none;
+}
+.Hero .lg-title {
+    color: var(--primary-clr);
+    text-transform: uppercase;
+    font-family: var(--header-font);
+    font-weight: 700;
+    font-size: 60px;
+}
+.Hero .line {
+    display: block;
+}
+
+.Hero .lg-text {
+    margin-left: 4rem; 
+    margin-top: .5rem;
+    font-size: 20px;
+    
+}
+
+@media screen and (min-width: 1162px) {
+
+
+    .Hero .btn-wrapper {
+        display: none;
+    }
+    
+    .Hero .black {
+        display: block;
+    }
+
+    .Hero .hero-wrapper {
+        display: flex;
+    }
+
+    .Hero .hero-img {
+        visibility: visible;
+    }
+
+    .Hero .circle {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    /* -- BOTH CIRCLES -- */
+    .Hero .small-txt {
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .Hero .small-txt:hover {
+        text-decoration: underline;
+    }
+
+    /* -- FLIP -- */
+
+    .Hero .flip-card-takeaway {
+        background: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 15rem;
+        left: 10rem;
+        position: absolute;
+    }
+
+    .Hero .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    .Hero .flip-card-takeaway:hover .flip-card-inner {
+        transform:  rotateY(-180deg);
+    }
+
+    .Hero .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .Hero .flip-card-front {
+        background-color: var(--primary-clr);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .Hero .flip-card-back {
+        background-color: var(--primary-clr);
+        color: #fff;
+        transform: rotateY(-180deg);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* -- SMAL CIRCLE -- */
+    
+    .Hero .flip-card-delivery {
+        background: #fff;
+        width: 260px;
+        height: 260px;
+        perspective: 1000px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        bottom: 5rem;
+        left: -8rem;
+        border: 5px solid #fff;
+        position: absolute;
+    }
+
+    .Hero .flip-card-front-delivery {
+        background: #000;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .Hero .flip-card-back-delivery {
+        background-color: #000;
+        color: #fff;
+        transform: rotateY(-180deg);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    
+    .Hero .flip-card-front-delivery, .flip-card-back-delivery {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .Hero .flip-card-delivery:hover .flip-card-inner {
+        transform:  rotateY(-180deg);
+    }
+
+    .Hero .txt-wrapper {
+        padding: 1.5rem;
+    }
+
+    /* -- FLIP END -- */
+
+    .Hero .homedelivery-img{
+        display: flex;
+        margin-top: 2.5rem;
+    }
+    .Hero .takeaway-img {
+        display: flex;
+        margin-top: 2.6rem;
+    }
+
+    /* -- INFORMATION -- */
+    .Hero .title {
+        font-size: 50px;
+    }
+
+    .Hero .line {
+        width: 6rem;
+        border-top: 6px solid var(--primary-clr);
+        margin-bottom: 2rem;
+        position: absolute;
+        top: 5rem;
+        left: 13rem;
+    }
+    
+    .Hero .bg-img {
+        background-color: #000;
+        position: relative;
+        width: 20rem;
+    }
+
+    .Hero .text-wrapper {
+        display: none;
+    }
+
+    .Hero .lg-text-wrapper {
+        display: flex;
+        position: absolute;
+        left: 13rem;
+        top: 6rem;
+    }
+
+    .Hero .lg-text {
+        width: 500px;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .Hero .lg-text {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    
+    .Hero .lg-text {
+        width: 900px;
+    }
+    /* -- BIG CRICLE -- */
+    .Hero .flip-card-takeaway {
+        width: 400px;
+        height: 400px;
+    }
+
+    .Hero .takeaway-img {
+        margin-top: 6rem;
+    }
+
+    /* -- FLIP CARD SMALL -- */
+    .Hero .flip-card-delivery{
+        width: 300px;
+        height: 300px;
+    }
+    .Hero .homedelivery-img{
+        margin-top: 4rem;
+    }
+
+}
+
+
