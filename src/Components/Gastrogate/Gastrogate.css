@@ -1,0 +1,13 @@
+.Gastrogate {
+    display: flex;
+    justify-content: center;
+    padding-block: 1rem;
+}
+
+.Gastrogate .img-div {
+    height: 30px;
+}
+
+.Gastrogate img {
+    height: 100%;
+}

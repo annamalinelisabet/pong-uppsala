@@ -1,0 +1,43 @@
+.Catering {
+    background: var(--dark-clr);
+    padding: 2rem 0 3rem 0;
+    margin-top: 3rem;
+}
+
+.Catering .img-div {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Catering img {
+    height: 100%;
+}
+
+.Catering h3,
+.Catering p {
+    color: white;
+}
+
+.Catering p {
+    margin: .2rem 0 1.2rem 0;
+}
+
+.Catering .link {
+    color: var(--secondary-clr);
+    font-weight: bold;
+}
+
+
+@media (min-width: 992px) {
+    .Catering .container {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .Catering .img-div {
+        flex: 1;
+    }
+}

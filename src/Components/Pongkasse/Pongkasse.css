@@ -1,0 +1,105 @@
+.Pongkasse {
+    margin-block: 2rem;
+}
+
+.Pongkasse .pong-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.Pongkasse .vegan {
+    position: absolute;
+    bottom: 4rem;
+    right: 6rem;
+    background: #28A074;
+    padding: .5em;
+    border-radius: .5em;
+    transform: rotate(15deg);
+}
+
+.Pongkasse .vegan small{
+    color: white;
+}
+
+.Pongkasse img {
+    width: 100%;
+}
+
+.Pongkasse .text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Pongkasse .header {
+    font-family: var(--header-font);
+    margin: 2rem 0 1rem 0;
+}
+
+.Pongkasse span {
+    display: inline-block;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.Pongkasse .btn-pong {
+    border: 2px solid var(--secondary-clr);
+    width: 100%;
+
+    transition: all 50ms ease-in;
+}
+
+.Pongkasse .btn-pong:hover {
+    border: 2px solid var(--secondary-clr);
+    background: var(--secondary-clr);
+}
+
+@media (min-width: 992px) {
+    .Pongkasse{
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    
+    .Pongkasse .pong-wrapper {
+        flex: 1;
+    }
+
+    .Pongkasse.container{
+        width: 100%;
+    }
+    
+    .Pongkasse .img-div {
+        /* width: 100%; */
+        position: absolute;
+        top: 0;
+        right: -12rem;
+    }
+    
+    .Pongkasse img {
+        width: 1000px
+    }
+
+    .Pongkasse .text-div {
+        margin-top: 4rem;
+        align-items: start;
+        justify-content: center;
+        background: black;
+        padding-inline: 8rem;
+        border-radius: 100%;
+        width: 700px;
+        height: 700px;
+    }
+
+    .Pongkasse p {
+        text-align: start;
+    }
+
+    .Pongkasse p,
+    .Pongkasse .header {
+        color: white;
+    }
+
+    .Pongkasse .btn-pong {
+        color: white;
+    }
+}
