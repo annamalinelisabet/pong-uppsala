@@ -1,13 +1,20 @@
-import React from 'react'
+import { useEffect } from 'react'
 import './Pongkasse.css'
 import PongkasseImg from '../../Images/uppsala-pongkasse.png'
 import { Link } from 'react-router-dom'
+import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Pongkasse = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <div className='Pongkasse container'>
       <div className="pong-wrapper">
-        <div className='img-div'>
+        <div className='img-div' data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <img src={PongkasseImg} alt="Pongkasse" />
         </div>
         <div className='vegan'>
