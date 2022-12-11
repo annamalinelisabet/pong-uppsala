@@ -3,24 +3,32 @@ import './SmallNavbar.css'
 import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from "react-icons/fa"
+import PongLogo from '../../Images/PongLogo.png'
 
 
 const SmallNavbar = () => {
     const navRef = useRef();
+
+    const [showDropdown, setShowDropdown] = useState(false)
+    const [showOnlineDropdown, setShowOnlineDropdown] = useState(false)
+    const [showBookDropdown, setShowBookDropdown] = useState(false)
+
     const showNavbar = () => {
-        navRef.current.classList.toggle("responsive_nav")
+        navRef.current.classList.add("responsive_nav")
     }
     const hideNavbar = () => {
         navRef.current.classList.remove("responsive_nav")
     }
     
-    const [showDropdown, setShowDropdown] = useState(false)
-    const [showOnlineDropdown, setShowOnlineDropdown] = useState(false)
-    const [showBookDropdown, setShowBookDropdown] = useState(false)
-
   return (
     <div className='SmallNavbar'>
         <div className='nav-wrapper'>
+            <Link to="/">
+                <div className={`logo-container ${ showNavbar ? 'indexLow' : ''}`}  >
+                    <img src={PongLogo} className='logo' alt="pong-logo" />
+                </div>
+            </Link>
+
                 <div className='emty-div'></div>
                         <div className='nav-links-container'>
 

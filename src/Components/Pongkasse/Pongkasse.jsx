@@ -14,7 +14,7 @@ const Pongkasse = () => {
   return (
     <div className='Pongkasse container'>
       <div className="pong-wrapper">
-        <div className='img-div' data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+        <div className='img-div' data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-sine"  data-aos-once="true">
             <img src={PongkasseImg} alt="Pongkasse" />
         </div>
         <div className='vegan'>
